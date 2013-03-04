@@ -4,8 +4,12 @@
   "description": "Get Johnny-Five hardware objects talking to Spacebrew",
   "version": "0.0.0",
   "main": "lib/saint-five",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "ws": "0.4.x"
+  },
+  "devDependencies": {
+    "johnny-five": "0.5.x"
+  },
   "optionalDependencies": {},
   "engines": {
     "node": "*"

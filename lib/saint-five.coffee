@@ -20,7 +20,9 @@ strings = {}
 
 module.exports.connect = (opts) ->
   opts = opts || {}
-  sb = new Spacebrew.Client(opts.server || defaults.server, opts.name || defaults.name, opts.description || defaults.description)
+  sb = new Spacebrew.Client(opts.server || defaults.server,
+                            opts.name || defaults.name,
+                            opts.description || defaults.description)
   sb.connect()
 
   sb.onRangeMessage = (name, value) ->
