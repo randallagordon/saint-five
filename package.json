@@ -1,0 +1,13 @@
+{
+  "author": "Randall A. Gordon <randall@randallagordon.com> (http://randallagordon.com/)",
+  "name": "saint-five",
+  "description": "Get Johnny-Five hardware objects talking to Spacebrew",
+  "version": "0.0.0",
+  "main": "lib/saint-five",
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
