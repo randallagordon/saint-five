@@ -5,7 +5,7 @@
   "version": "0.0.0",
   "main": "lib/saint-five",
   "dependencies": {
-    "ws": "0.4.x"
+    "spacebrew.js": "git://github.com/randallagordon/spacebrew.js#master"
   },
   "devDependencies": {
     "johnny-five": "0.5.x"

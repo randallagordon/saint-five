@@ -6,7 +6,7 @@
  * Licensed under the MIT license.
 ###
 
-Spacebrew = require('./sb-1.0.3.js').Spacebrew
+Spacebrew = require('spacebrew.js').Spacebrew
 
 defaults =
   server: 'sandbox.spacebrew.cc'
