@@ -1,6 +1,8 @@
 # saint-five ###################################################################
 
-Strategic Artificially Intelligent Nodeular Transport Number 5 - Expose Johnny-Five objects via Spacebrew for fun and profit!
+Strategic Artificially Intelligent Nodeular Transport Number 5 - Expose
+[Johnny-Five](https://github.com/rwldrn/johnny-five) objects via
+[Spacebrew](http://docs.spacebrew.cc/) for fun and profit!
 
 ### Code Example
 
@@ -19,6 +21,12 @@ Strategic Artificially Intelligent Nodeular Transport Number 5 - Expose Johnny-F
       // Or call it via saint.fire and pass the object
       saint.fire(new five.Button(2)); 
     });
+
+By default this will create a connection to the public [Spacebrew
+Admin](http://spacebrew.github.com/spacebrew/admin/admin.html?server=sandbox.spacebrew.cc)
+interface.
+
+To connect to another server: `saint.connect({ server: 'http://localhost/' })`
 
 ### TODO
 
