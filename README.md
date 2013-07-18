@@ -10,27 +10,25 @@ Strategic Artificially Intelligent Nodeular Transport Number 5 - Expose
         saint = require("saint-five");
 
     saint.connect();   // Connect to Spacebrew
-    saint.bless(five); // Add fire() method to supported hardware
 
     var board = new five.Board();
 
     board.on( "ready", function() {
-      // Two ways to wire johnny-five objects to Spacebrew
-      // fire() method added by the saint.bless() call
-      new five.Led(13).fire();
-      // Or call it via saint.fire and pass the object
-      saint.fire(new five.Button(2)); 
+      // Wire johnny-five objects to Spacebrew by calling
+      // saint.wire and pass the object to be connected
+      saint.wire(new five.Button(2)); 
     });
 
 By default this will create a connection to the public [Spacebrew
 Admin](http://spacebrew.github.com/spacebrew/admin/admin.html?server=sandbox.spacebrew.cc)
-interface.
+interface. Any johnny-five objects connected will have their appropriate inputs
+and outputs revealed in the interface ready to be wired as you wish!
 
 To connect to another server: `saint.connect({ server: 'http://localhost/' })`
 
 ### TODO
 
- - Support more johnny-five abstractions
+ - Support more johnny-five abstractions!
 
 ## License #####################################################################
 
