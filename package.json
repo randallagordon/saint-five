@@ -8,7 +8,7 @@
     "spacebrew.js": "git://github.com/randallagordon/spacebrew.js#master"
   },
   "devDependencies": {
-    "johnny-five": "~0.6.16"
+    "johnny-five": "~0.7.0"
   },
   "optionalDependencies": {},
   "engines": {
