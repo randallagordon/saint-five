@@ -29,6 +29,7 @@ To connect to another server: `saint.connect({ server: 'http://localhost/' })`
 ### TODO
 
  - Support more johnny-five abstractions!
+ - Inject J5 objects into REPL in examples
 
 ## License #####################################################################
 
