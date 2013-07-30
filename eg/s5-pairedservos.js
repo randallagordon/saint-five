@@ -3,7 +3,7 @@ var five = require('johnny-five'),
 
 saint.connect();
 
-board = new five.Board({ port: 'COM40' });
+board = new five.Board();
 
 board.on('ready', function() {
 
