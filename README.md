@@ -16,7 +16,8 @@ Strategic Artificially Intelligent Nodeular Transport Number 5 - Expose
     board.on( "ready", function() {
       // Wire johnny-five objects to Spacebrew by calling
       // saint.wire and pass the object to be connected
-      saint.wire(new five.Button(2)); 
+      saint.wire( new five.Button( 2 ) ); 
+      saint.wire( new five.Led( 13 ) ); 
     });
 
 By default this will create a connection to the public [Spacebrew
@@ -26,9 +27,16 @@ and outputs revealed in the interface ready to be wired as you wish!
 
 To connect to another server: `saint.connect({ server: 'http://localhost/' })`
 
-### TODO
+## Supported Johnny-Five Devices
 
- - Support more johnny-five abstractions!
+ - LED (boolean)
+ - Button (boolean)
+ - Partial Servo support (min and max are exposed)
+ - Nodebot (Using Device Orientation data from the [spacebrew-utils](https://github.com/randallagordon/spacebrew-utils) Sensor utility)
+
+## TODO
+
+ - Support more Johnny-Five devices!
  - Inject J5 objects into REPL in examples
 
 ## License #####################################################################
