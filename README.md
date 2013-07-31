@@ -25,7 +25,7 @@ Admin](http://spacebrew.github.com/spacebrew/admin/admin.html?server=sandbox.spa
 interface. Any johnny-five objects connected will have their appropriate inputs
 and outputs revealed in the interface ready to be wired as you wish!
 
-To connect to another server: `saint.connect({ server: 'http://localhost/' })`
+To connect to another server: `saint.connect({ server: 'localhost' })`
 
 ## Supported Johnny-Five Devices
 

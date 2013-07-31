@@ -13,5 +13,9 @@
   "optionalDependencies": {},
   "engines": {
     "node": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/randallagordon/saint-five"
   }
 }
